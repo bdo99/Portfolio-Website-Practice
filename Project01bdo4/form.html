@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="vietport" content="width=device-width, initial-scale=1.0">
+        <title>IT 331 - Project 1 - Brian Do</title>
+
+        <!-- Allows for the cute icons at the Footer to link to my LinkedIn and Github -->
+        <script src="https://kit.fontawesome.com/45480ba906.js" crossorigin="anonymous"></script> 
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontStyle.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/mint-choc/jquery-ui.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k=" crossorigin="anonymous"></script>
+
+        <script>
+            $(function(){
+                $('#date').datepicker();
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+        <script src="js/commentForm.js"></script>
+
+        <style>
+            .error{
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <button class="nav_toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="hobbies.html" class="nav_link">My Hobbies</a></li>
+                    <li class="nav_item"><a href="aboutme.html" class="nav_link">About Me</a></li>
+                    <li class="nav_item"><a href="projects.html" class="nav_link">My Projects</a></li>
+                    <li class="nav_item"><a href="references.html" class="nav_link">References</a></li>
+                    <li class="nav_item"><a href="form.html" class="nav_link">The Form</a></li>
+                    <li class="nav_item"><a href="index.html#footer" class="nav_link">Footer</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section_title section_title_intro">
+                Welcome to <strong>The Form</strong>
+            </h1>
+            <p class="section_subtitle section_subtitle_intro">
+                 Brian Do
+            </p>
+            <!-- Source to the image https://2020.igem.org/Safety/Final_Safety_Form -->
+                <img src="img/form.png" alt="Two papers on top of each other" class="intro_img">
+        </section>
+
+        <!-- Content -->
+        <div class="wrapper">
+            <div class="title">
+                Comment Form
+            </div>
+            <div class="form">
+                <form id = "comment_form">
+                    <div class="input_field">
+                        <label>First Name</label>
+                        <input id="firstname" name="firstname" type="text" class="input">
+                    </div>
+                    <div class="input_field">
+                        <label>Last Name</label>
+                        <input id="lastname" name="lastname" type="text" class="input">
+                    </div>
+                    <div class="input_field">
+                        <label>Email Address</label>
+                        <input id="email" name="email" type="email" class="input">
+                    </div>
+                    <div class="input_field">
+                        <label>Date</label>
+                        <input id="date" name="date" type="text" class="input">
+                    </div>
+                    <div class="input_field">
+                        <label>Gender</label>
+                        <div class="custom_select">
+                            <select>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Do not wish to specify</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input_field">
+                        <label>How would you like to rate my site?</label>
+                        <div class="custom_select">
+                            <select>
+                                <option value="">- Choose One -</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                                <option value="poor">Poor</option>
+                                <option value="terrible">Terrible</option>    
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input_field">
+                        <label>Your Comments</label> <br>
+                        <textarea id="comments" name="comments" rows="10" cols="50"></textarea>
+                    </div>
+                    <label>Would you like to be on the mailing list?</label>
+                    <div class="input_field">
+                        <input type="radio" id="yes" name="mailing_list" value="YES">
+                        <label>Yes</label>
+                    </div>
+                    <div class="input_field">
+                        <input type="radio" id="no" name="mailing_list" value="NO">
+                        <label>No</label>
+                    </div>
+                    <div class="input_field">
+                        <input type="radio" id="dontcare" name="mailing_list" value="DONTCARE">
+                        <label>Don't Care</label>
+                    </div>
+                    <div class="input_field">
+                        <input type="submit" value="Submit" class="btn">
+                    </div>
+                    <div class="input_field">
+                        <input type="reset" value="Reset" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:bdo4@gmu.edu" class="footer_link">bdo4@gmu.edu</a>
+            <ul class="social_list">
+                <li class="social_list_item">
+                    <a class="social_list_link" href="form.html">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_list_link" href="https://www.linkedin.com/in/brianquocdo">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_list_link" href="https://github.com/bdo99">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                Disclaimer: This website is developed as an educational project. Certain materials are included under the fair 
+                use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidlines and are 
+                restricted from further use.
+            </p>
+            <p>
+                You may view the external css sheet <a href="css/style.css"><i class="fas fa-file-image"></i></a>
+            </p>
+            <p>
+                forms.html has an additional external css sheet <a href="css/fontStyle.css"><i class="fas fa-file-image"></i></a>
+            </p>
+        </footer>
+    </body>
+    
+    <script src="js/index.js"></script>
+</html>

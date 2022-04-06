@@ -1,0 +1,4 @@
+<h1>GANYU</h1>
+<p>Ganyu is from Liyue.</p>
+<p>Ganyu uses the bow weapon.</p>
+<p>Ganyu uses the Cyro/Ice element.</p>

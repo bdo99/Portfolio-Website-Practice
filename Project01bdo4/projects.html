@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="vietport" content="width=device-width, initial-scale=1.0">
+        <title>IT 331 - Project 1 - Brian Do</title>
+
+        <!-- Allows for the cute icons at the Footer to link to my LinkedIn and Github -->
+        <script src="https://kit.fontawesome.com/45480ba906.js" crossorigin="anonymous"></script> 
+        <script src="js/localStorage.js"></script>
+        <script src="js/linkStyle.js"></script>
+        <script src="js/Mouse0utMouse0ver.js"></script>
+        <script src="js/setIntervalclearInterval.js"></script>
+        <script src="js/createElement.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".contentBox").click(function(){
+                    $(".contentBox").animate({
+                        width: '500px',
+                        height: '+=200px'
+                    }, 1000);
+                    $(".contentAfter").show().animate({opacity: '1'}, 3000);
+                });
+            });
+        </script>
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <button class="nav_toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="hobbies.html" class="nav_link">My Hobbies</a></li>
+                    <li class="nav_item"><a href="aboutme.html" class="nav_link">About Me</a></li>
+                    <li class="nav_item"><a href="projects.html" class="nav_link">My Projects</a></li>
+                    <li class="nav_item"><a href="references.html" class="nav_link">References</a></li>
+                    <li class="nav_item"><a href="form.html" class="nav_link">The Form</a></li>
+                    <li class="nav_item"><a href="index.html#footer" class="nav_link">Footer</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section_title section_title_intro">
+                Welcome to <strong>My Project</strong>
+            </h1>
+            <p class="section_subtitle section_subtitle_intro">
+                 Brian Do
+            </p>
+            <img src="img/project.jpg" alt="Picture of Brian Do" class="intro_img" id="image">
+        </section>
+
+        <!-- Content -->
+        <div class="content_section">
+            <h2>My Projects</h2>
+            <br>
+
+            <!-- Content #1 -->
+            <h3>Learning HTML/CSS/JS</h3>
+            <p>
+                Something I am learning in School right now is HTML, CSS, and JS. Here is an animation that I learned through <a href="https://www.w3schools.com/js/js_htmldom_animate.asp">w3schools</a>. 
+                This is something I want to learn more indepth in the future and start practicing. It is animation but using javascript within the HTML. Or I could have put this function in a seperate 
+                javascript file and saved it there and called the source to this HTML file. 
+            </p>
+            <p><button onclick="myMove()" class="button">Click Me</button></p> 
+
+            <div id ="container">
+            <div id ="animate"></div>
+            </div>
+
+            <script>
+            function myMove() {
+                let id = null;
+                const elem = document.getElementById("animate");   
+                let pos = 0;
+                clearInterval(id);
+                id = setInterval(frame, 5);
+                function frame() {
+                    if (pos == 350) {
+                    clearInterval(id);
+                    } else {
+                    pos++; 
+                    elem.style.top = pos + "px"; 
+                    elem.style.left = pos + "px"; 
+                    }
+                }
+            }
+            </script>
+
+            <br>
+            <br>
+
+            <!-- Content #2 -->
+            <h3>Greeting the User</h3>
+            <p>Next up is using Javascript to greet the user using the localStorage property. This would allow me to practice keeping the username's if they are logged on the website 
+                when I decide to make a website that requires accounts to be made to talk to each other.
+            </p>
+            <form action="#">
+                <p>
+                    <input type="button" value="Start" id="startButton">
+                    <input type="button" value="Reset" id="resetButton">
+                </p>
+            </form>
+            <p id="message"></p>
+            <br>
+            <br>
+
+            <!-- Content #3 -->
+            <h3>Changing the Style of the Page Content Dynamically</h3>
+            <p>
+                Using the start button below, the user (you) can style the link's highlight color using JavaScript. <br> <br>
+                <a href="https://catalog.gmu.edu/colleges-schools/engineering/information-sciences-technology/information-technology-bs/#dtp">DTP:</a> Database Technology and Programming (DTP) <br>
+                <a href="https://catalog.gmu.edu/colleges-schools/engineering/information-sciences-technology/information-technology-bs/#hit">HIT:</a> Health Information Technology <br>
+                <a href="https://catalog.gmu.edu/colleges-schools/engineering/information-sciences-technology/information-technology-bs/#infs">CYBR:</a> Cyber Security <br>
+                <a href="https://catalog.gmu.edu/colleges-schools/engineering/information-sciences-technology/information-technology-bs/#ntel">NTEL:</a> Network and Telecommunications <br>
+                <a href="https://catalog.gmu.edu/colleges-schools/engineering/information-sciences-technology/information-technology-bs/#wdm">WADV:</a> Web Application Development <br>
+                <a href="https://catalog.gmu.edu/colleges-schools/engineering/information-sciences-technology/information-technology-bs/#ccg">CCG:</a> Cloud Computing <br>
+                <br>
+                <input id="startButton2" type="button" value="Start"> 
+            </p>
+            <br>
+            <br>
+            <h3>Mouse Over and Mouse Out</h3>
+            <p>
+                Here is some examples of Mouse Over and Mouse Out, simply hover your mouse over and mouse out of the word "text" as well as anything else on the page with an "id".
+            </p>
+            <p>This is some <span id="text1">text</span></p>
+            <p>This is some <span id="text2">text</span></p>
+            <p>This is some <span id="text3">text</span></p>
+            <p>This is some <span id="text4">text</span></p>
+            <p>This is some <span id="text5">text</span></p>
+
+            <br>
+            <br>
+
+            <h3>Use of setInterval and clearInterval</h3>
+            <div id="my_box">
+                <p>
+                    Here is going to be an example of setInterval and clearInterval. By clicking the start button, the text will turn green then red. By clicking the stop button, the text will turn red. 
+                    By clicking the Start button, there is an interval of 1000ms for the text to turn green then red, and repeat. By clicking Stop button, the text will remain the color of whatever it was last.
+                </p>
+            </div>
+            <button id="startButton3">Start</button>
+            <button id="stop">Stop</button>
+
+            <br>
+            <br>
+            <br>
+
+            <h3>Replacing an Element using DOM functionality</h3>
+            <p>
+                Here is an example of using the DOM Functionality. We are going to replace the "Original Text" to "Replacement Text" by replacing the element in the next p tag.
+            </p>
+            <p id="original">Original Text</p>
+		    <input type="button" value="click" onclick="replaceit()" id="startButton4">
+
+            <br>
+            <br>
+            <br>
+        
+            <h3>XML/JSON with Spry XML/JSON Data Set</h3>
+            <p>
+                Here is a table showcase of XML with Spry XML. Using the characters from Genshin Impact.
+            </p>
+            <div spry:region = "dsEvents">
+                <table id = "events">
+                    <tbody>
+                        <tr>
+                            <th scope = "col">Name</th>
+                            <th scope = "col">Element</th>
+                        </tr>
+                        <tr spry:repeat = "dsEvents" spry:hover = "rowHover" spry:setrow = "dsEvents">
+                            <td>{name}</td>
+                            <td>{element}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <h3>AJAX with XMLHttpRequest</h3>
+            <p id="demo">We are going to use AJAX to transform and change this text.</p>
+            <button type="button" onclick="loadDoc()">Change Content</button>
+
+            <script>
+                function loadDoc(){
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if(this.readyState == 4 && this.status == 200){
+                            document.getElementById("demo").innerHTML = this.responseText;
+                        }
+                    }
+                    xhttp.open("GET", "ajax_info.txt", true);
+                    xhttp.send();
+                }
+            </script>
+
+            <br>
+            <br>
+            <br>
+
+            <h3>JQuery Library - using animate()</h3>
+            <div class="contentBox">
+                <p class="contentBefore">Click me to see more!</p>
+                <p class="contentAfter">
+                    I really enjoyed learning and praciticng my Web Development skills in this class, IT 331. <br>
+                    I look forward in learning more about Web Development in the next class and more about back-end development.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:bdo4@gmu.edu" class="footer_link">bdo4@gmu.edu</a>
+            <ul class="social_list">
+                <li class="social_list_item">
+                    <a class="social_list_link" href="form.html">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_list_link" href="https://www.linkedin.com/in/brianquocdo">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_list_link" href="https://github.com/bdo99">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                Disclaimer: This website is developed as an educational project. Certain materials are included under the fair 
+                use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidlines and are 
+                restricted from further use.
+            </p>
+            <p>
+                You may view the external css sheet <a href="css/style.css"><i class="fas fa-file-image"></i></a>
+            </p>
+        </footer>
+    </body>
+    
+    <script src="js/index.js"></script>
+</html>

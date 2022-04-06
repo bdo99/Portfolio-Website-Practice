@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<events>
+
+    <event>
+        <name>Amber</name>
+        <element>Pyro</element>
+    </event>
+
+    <event>
+        <name>Fischl</name>
+        <element>Electro</element>
+    </event>
+
+    <event>
+        <name>Barbara</name>
+        <element>Hydro</element>
+    </event>
+
+    <event>
+        <name>Kaeya</name>
+        <element>Cyro</element>
+    </event>
+
+    <event>
+        <name>Sucrose</name>
+        <element>Anemo</element>
+    </event>
+
+    <event>
+        <name>Noelle</name>
+        <element>Geo</element>
+    </event>
+
+    <event>
+        <name>Bennett</name>
+        <element>Pyro</element>
+    </event>
+
+    <event>
+        <name>Diluc</name>
+        <element>Pyro</element>
+    </event>
+
+    <event>
+        <name>Lisa</name>
+        <element>Electro</element>
+    </event>
+
+    <event>
+        <name>Razor</name>
+        <element>Electro</element>
+    </event>
+
+    <event>
+        <name>Mona</name>
+        <element>Hydro</element>
+    </event>
+
+    <event>
+        <name>Rosaria</name>
+        <element>Cyro</element>
+    </event>
+    <event>
+        <name>Diona</name>
+        <element>Cyro</element>
+    </event>
+
+    <event>
+        <name>Jean</name>
+        <element>Anemo</element>
+    </event>
+    <event>
+        <name>Venti</name>
+        <element>Anemo</element>
+    </event>
+
+    <event>
+        <name>Albedo</name>
+        <element>Geo</element>
+    </event>
+
+</events>

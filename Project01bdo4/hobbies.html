@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="vietport" content="width=device-width, initial-scale=1.0">
+        <title>IT 331 - Project 1 - Brian Do</title>
+
+        <!-- Allows for the cute icons at the Footer to link to my LinkedIn and Github -->
+        <script src="https://kit.fontawesome.com/45480ba906.js" crossorigin="anonymous"></script> 
+        <script src="js/RandomPicture.js"></script>
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <button class="nav_toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="hobbies.html" class="nav_link">My Hobbies</a></li>
+                    <li class="nav_item"><a href="aboutme.html" class="nav_link">About Me</a></li>
+                    <li class="nav_item"><a href="projects.html" class="nav_link">My Projects</a></li>
+                    <li class="nav_item"><a href="references.html" class="nav_link">References</a></li>
+                    <li class="nav_item"><a href="form.html" class="nav_link">The Form</a></li>
+                    <li class="nav_item"><a href="index.html#footer" class="nav_link">Footer</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section_title section_title_intro">
+                Welcome to <strong>My Hobbies</strong>
+            </h1>
+            <p class="section_subtitle section_subtitle_intro">
+                 Music | Video Games | Movies
+            </p>
+            <!-- Source to the image https://travel.earth/hobbies-that-you-can-learn-during-quarantine/ -->
+                <img src="img/hobbies.jpg" alt="Bunch of hobbies" class="intro_img">
+        </section>
+
+        <!-- Content -->
+        <div class="content_section">
+            <h2>Music</h2>
+            <p>
+                <img class="right" src="img/orchestra.jpg" alt="Brian Do and his Orchestra friends">
+                One of my most favorite hobbies is Music. I started playing Music in 4th grade starting with Violin. I later started playing Piano around 
+                11th grade. Since the Piano was too big, I played a smaller Piano, that you blow into, called the Melodica. I met my closest friends thanks to Music and 
+                I'm glad I got to meet them and still be able to talk to them today.
+            </p>
+            <p>
+                Orchestra was one of my favorite electives/classes back in High School. I got to go on many fun trips with them. We got to go to 
+                Atlanta, Georgia and see the Aquarium and Coke Factory over there. Next we went to Chicago, Illinois to perform there and see antique string instruments they had 
+                and see the Cloud Gate. Lastly, we were able to go to Disney World in Orlando, Florida to compete against other Orchestra as well as have fun at Epcot, Magic Kingdom, and 
+                Animal Kingdom. Overall, I had a fun time with my Orchestra and am so thankful that I get to be able to talk to my close friends from there to this day now. I sometimes 
+                still play my instruments here and there.
+            </p>
+            <button class="button" onclick="openSong()">Music</button>
+            <script>
+                function opensong(){
+                    window.open("https://www.youtube.com/watch?v=K0iB84__atU");
+                }
+            </script>
+            <br>
+            <br>
+            <h2>Video Games</h2>
+            <p>
+                <img id="image" class="right" src="img/Ganyu.jpg" alt="Genshin Impact Character - Ganyu">
+                My favorite Video Games to play right now are Genshin Impact, MapleStory, Valorant, and League of Legends. These games are my favorite past times and to be able to play 
+                with my friends. Initially, I only really enjoyed playing League of Legends with my close friends and some other games like Minecraft here and there. But since the coronavirus, 
+                I started playing MapleStory and met a lot of online people all over the world there.
+            </p>
+            <p>
+                In MapleStory, it helped past the time during quarantine because it gave me something else to do than Zoom University at the time and helped me socialize with others even 
+                through the internet. I have friends all over the world now like in Toronto, Vancouver, California, Georgia, New York, and even in Austrailia. I still play it to this day 
+                but not as much as I have been during qurantine and in the past Summer. I hope that one day that I could meet some of them.
+            </p>
+            <p>
+                My next favorite game is, Genshin Impact. I fell in love with Genshin Impact when it came out last year (2020). Genshin Impact was basically an open world game where I could 
+                run around and explore, collecting materials, killing monsters, and doing quests. The characters all have a pretty aesthetic as well. The character you see on the right is the 
+                character I use the most. Her name is Ganyu. Thanks to MapleStory, I was also able to find friends who played Genshin Impact as well. Although, Genshin Impact is more of a 
+                solo game, there are things you can do together like kill bosses together and also help each other out. Here is a table of what my Ganyu character can do in two types of 
+                teams: Melt and Freeze.
+            </p>
+            <table style="width:50%">
+                <tr style="height:200px">
+                    <th rowspan="2">
+                        <a href="https://genshin-impact.fandom.com/wiki/Ganyu">
+                            <img src="img/Ganyu.jpg" alt="Ganyu" style="width: 200px; height: 220px;">
+                        </a>
+                    </th>
+                    <th colspan="4">
+                        <h1>
+                            Ganyu Artifacts
+                        </h1>
+                    </th>
+                </tr>
+                <tr>
+                    <th><h4>Sands</h4></th>
+                    <th><h4>Goblet</h4></th>
+                    <th><h4>Circlet</h4></th>
+                    <th><h4>Main DPS</h4></th>
+                </tr>
+                <tr>
+                    <th><h3>Melt</h3></th>
+                    <td><h5>EM / Atk %</h5></td>
+                    <td><h5>Cyro DMG</h5></td>
+                    <td><h5>Crit Rate/DMG</h5></td>
+                    <td><h5>Yes</h5></td>
+                </tr>
+                <tr>
+                    <th><h3>Freeze</h3></th>
+                    <td><h5>Atk %</h5></td>
+                    <td><h5>Cyro DMG</h5></td>
+                    <td><h5>Crit DMG</h5></td>
+                    <td><h5>Yes</h5></td>
+                </tr>
+            </table>
+            <p>
+                Last two favorite games would be Valorant and League of Legends. I'm putting them together because they are made from the same company, Riot Games. I normally play League 
+                of Legends with my High School friends but the hype right now is Valorant, so I've been putting more time into Valorant instead of League of Legends. Valorant is a fun First 
+                Person Shooter (FPS) game with a bunch of gimmicks like characters with abilities and map interactions like portals. I fell easily into Valorant because when I was younger, I 
+                would play a game called Counter Strike:Global Offensive (CSGO) with my friends. That game was also an FPS game. CSGO isn't as fun as it is anymore, so everyone has been playing 
+                Valorant more. 
+            </p>
+            
+            <br>
+            <br>
+            <h2>Anime</h2>
+            <p>
+                <a href="https://www.imdb.com/title/tt3895150/">
+                    <img class="right" src="img/anime.jpg" alt="photo of the Anime 'Your Lie in April'">
+                </a>
+                Animes are my favorite shows to watch whenever I am bored, have free time, or want to watch something. They have all kinds of genres like Fantasy World, Romantic, 
+                School Life, Horror, Action, Adventure, etc. These animes are just a few examples of the ones that I have watched, and the ones that I have really enjoyed. But if I were 
+                to name every single one, you find that on <a href="https://myanimelist.net/animelist/alluoti">my anime list</a>. Anime is animations. Specifically from Japan. Anime has 
+                recently become very popular in today's world. It's becoming so popular that popular Anime films that would do well in Japan are starting to make their way into America's 
+                theatres too. 
+            </p>
+            <p>
+                The first Anime I saw in theatres was Your Name. Your Name has a beautiful story, amazing soundtrack, and beautiful animations. Your Name is a romance and adventure 
+                animated film that has the ability to switch bodies with a boy and a girl. The boy and the girl would end up playing each other's lifes and ends up falling for each other. 
+                The boy ends up not being able to switch bodies with her anymore, and goes on a journey to find her. What he finds is something you should watch for yourself. 
+            </p>
+            <p>
+                An Anime that got me into watching more Anime was Sword Art Online. Sword Art Online is an anime that focuses on Fantasy World, Action, Adventure, and a bit of Romance. 
+                The main protagonist, Kirito, gets stuck inside a video game along with 7,000 other players and the creator made it that if you died in the game, the game would kill your 
+                brain, meaning you would die in real time too. The only way to escape the game was to clear all 100 floors and defeating the final boss that the creator created. 
+            </p>
+            <p>
+                Last Anime that I would like to talk about is Fate/Stay Night. Fate/Stay Night is a tricky Anime because it has so many different alternate universes to it. Which makes it 
+                really great and more content to watch and know. Fate/Stay Night is an anime with a both of Action. The Anime is about seven masters who get to summon a servant of a great hero 
+                in the past to partake in the game to win the Holy Grail. The great hero can be King Arthur, Gilgamesh, Alexander the Great, Hercules, and many more. The masters fight each other 
+                to the death and the last master and servant combo gets to win the Holy Grail that grants them one wish.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:bdo4@gmu.edu" class="footer_link">bdo4@gmu.edu</a>
+            <ul class="social_list">
+                <li class="social_list_item">
+                    <a class="social_list_link" href="form.html">
+                        <i class="far fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_list_link" href="https://www.linkedin.com/in/brianquocdo">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social_list_item">
+                    <a class="social_list_link" href="https://github.com/bdo99">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>
+                Disclaimer: This website is developed as an educational project. Certain materials are included under the fair 
+                use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidlines and are 
+                restricted from further use.
+            </p>
+            <p>
+                You may view the external css sheet <a href="css/style.css"><i class="fas fa-file-image"></i></a>
+            </p>
+        </footer>
+    </body>
+    
+    <script src="js/index.js"></script>
+    <script src="js/LastModified.js"></script>
+</html>
